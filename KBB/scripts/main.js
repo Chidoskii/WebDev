@@ -122,9 +122,13 @@ function updateScore() {
 
 // update game result message
 function updateResultMessage() {
-  document.querySelector(
-    '.js-result'
-  ).innerHTML = `You picked ${playerChoice} and the computer picked ${cpuChoice}. <br><br> ${result}`;
+  if (playerChoice != '') {
+    document.querySelector(
+      '.js-result'
+    ).innerHTML = `You picked ${playerChoice} and the computer picked ${cpuChoice}. ${result}`;
+  } else {
+    document.querySelector('.js-result').innerHTML = `Make a selection.`;
+  }
 }
 
 // display image based on outcome of game
@@ -154,12 +158,19 @@ function resetScore() {
   document.querySelector(
     '.js-score'
   ).innerHTML = `Wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.ties}`;
+  document.querySelector('.js-moves').innerHTML = ``;
+  playerChoice = '';
+  updateResultMessage();
 }
 
 // creates the js-result message
-document.querySelector(
-  '.js-result'
-).innerHTML = `You picked ${playerChoice} and the computer picked ${cpuChoice}. ${result}`;
+if (playerChoice != '') {
+  document.querySelector(
+    '.js-result'
+  ).innerHTML = `You picked ${playerChoice} and the computer picked ${cpuChoice}. <br><br> ${result}`;
+} else {
+  document.querySelector('.js-result').innerHTML = `Make a selection.`;
+}
 
 // creates the js-score message
 document.querySelector(

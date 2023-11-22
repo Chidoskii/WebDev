@@ -1,6 +1,37 @@
-body {
-  background-color: #ddc6a1;
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  background-color: black;
+  min-height: 100vh;
+  color: whitesmoke;
+  font-family: 'Acme', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 11pt;
+}
+
+.navbar-brand {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  color: black;
+  padding: 20px;
+  max-width: 750px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.container-lg {
+  min-height: 75vh;
+  padding: 30px;
+  text-align: center;
 }
 
 .title {
@@ -14,12 +45,12 @@ body {
 }
 
 .winner-img {
-  height: 450px;
+  height: 250px;
 }
 
 .move-button {
   background-color: transparent;
-  border: 3px solid;
+  border: 3px solid ;
   width: 150px;
   height: 150px;  
   border-radius: 75px;
@@ -38,16 +69,68 @@ body {
 .result {
   font-size: 25px;  
   font-weight: bold;
+  margin: 10px;
 }
 
 .score {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .reset-score-button {
   background-color: white;
+  border-radius: 5px;
   border: none;
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+.proj-link {
+  background-color: gray;
+  border: #0c0c0c 1px solid;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.sep-block {
+  text-align: right;
+}
+
+footer {
+  background-color: #0c0c0c;
+  text-align: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b3b;
+}
+
+@media (min-width: 576px) {
+.navbar-expand-sm .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+} }
+
+.navcan {
+  background-color: #0c0c0c !important;
 }
