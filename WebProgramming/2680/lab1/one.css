@@ -1,0 +1,28 @@
+body {
+  background-color: #282C33;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(205, 208, 211);
+}
+
+.title-can {
+  margin: auto;
+  width: 50%;
+  font-size: 25px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.page-title {
+  display: inline-flex;
+}
+
+.desc {
+  margin: 15px 10px;
+}
+
+.p-text {
+  display: inline-flex;
+  border: 2px solid black;
+}
+
+

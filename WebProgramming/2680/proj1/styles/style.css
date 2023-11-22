@@ -1,0 +1,517 @@
+html, body {
+  font-family: 'Acme', sans-serif;
+  background-color: rgb(32,33,36);
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 11pt;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+  justify-content: space-between;
+  background-color: #0c0c0c;
+  border-bottom: 5px black solid;
+  flex-wrap: wrap;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: whitesmoke;
+  display: flex;
+  font-size: 11pt;
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-can, .active {
+  height: 25px;
+  width: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  border-radius: 3px;
+  border: 1px #302d30 solid;
+}
+
+.link-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+}
+
+.root-link {
+  height: 36px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0c0c0c;
+  border-radius: 3px;
+  border: 1px #504e50 solid;
+  color: darkgray;
+}
+
+.topnav a.root-link:hover {
+  background-color: #0c0c0c;
+  border: none;
+}
+
+.logo-name {
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-name:hover {
+  font-size: 15pt;
+  color: royalblue;
+}
+
+.link-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #707070;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav .root-link {
+  float: left;
+  position: relative;
+}
+
+.main-header {
+  padding: 114px 0px 30px 0px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 30pt;
+  font-weight: 300;
+  font-family: 'Croissant One', cursive;
+  text-shadow: 4px 5px 5px black;
+  border-bottom: 10px black solid;
+  background-color: black;
+}
+
+#home-header {
+  text-align: right;
+  color: whitesmoke;
+  background-image: url("../imgs/home/beam.jpg");
+  background-position-x: -0px;
+  background-position-y: -320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 20px 234px 0px;
+}
+
+#musica {
+  text-align: left;
+  color: whitesmoke;
+  background-image: url("../imgs/music/som1.jpg");
+  background-position-x: 0px;
+  background-position-y: -125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 0px 234px 42px;
+}
+
+#spirits {
+  text-align: left;
+  color: whitesmoke;
+  background-image: url("../imgs/drinks/willit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 20px 234px 20px;
+}
+
+#sports {
+  text-align: left;
+  color: whitesmoke;
+  background-image: url("../imgs/sports/again.jpg");
+  background-position-x: -21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 0px 234px 42px;
+}
+
+#stories {
+  text-align: left;
+  color: whitesmoke;
+  text-shadow: 8px -19px 20px black;
+  background-image: url("../imgs/media/holly.jpg");
+  background-position-x: 0px;
+  background-position-y: -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 0px 234px 42px;
+}
+
+#sustenance {
+  text-align: left;
+  background-image: url("../imgs/food/plz.png");
+  text-shadow: 4px 5px 3px black;
+  background-position-x: 0px;
+  background-position-y: -290px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 96px 0px 234px 50px;
+}
+
+.sub-header {
+  margin: 0px;
+  font-size: 17pt;
+  padding: 0px 0px 10px 0px;
+  text-shadow: 4px 5px 5px black;
+}
+
+.content {
+ display: inline-block;
+ width: 100%;
+}
+
+.interest-content {
+  margin: auto;
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 300px;
+  padding-top: 75px;
+ }
+
+.hobbies {
+  float: left;
+  width: 85%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.hobby, .hobby-info, .hobby-appeal, .hobby-goal {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  border-radius: 5px;
+  background-color: #0c0c0c;
+  box-shadow: 3px 3px 3px 0px #161616;
+
+}
+
+.hobby {
+  width: 45%;
+}
+
+.hobby-desc , .hobby-text { 
+  font-size: 13pt;
+}
+
+/*Hobbies on the home page*/
+.hobby-group{
+  width: 80%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.hobby-group-r {
+  width: 60%;
+  margin: 20px;
+  padding: 25px;
+  background-color: #121212;
+}
+
+.hobby-group-l {
+  width: 60%;
+  margin: 20px;
+  padding: 25px;
+  background-color: #121212;
+}
+
+.hobby-tnail-r, .hobby-tnail-l {
+  width: 40%;
+}
+
+#home-page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.hobby-link {
+  display: flex;
+  justify-content: right;
+}
+
+.hobby-link a {
+  font-family: 'Acme', sans-serif;
+  text-align: right;
+  font-size: 9pt;
+  color: aliceblue;
+}
+
+.hobby-link a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.view-can {
+  background-color: rgb(32,33,36);
+  border: whitesmoke 1px solid;
+  border-radius: 8px;
+  padding: 2px 5px
+}
+
+.view-can:hover {
+  border: gray 1px solid;
+}
+
+.clear-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-size: 40pt;
+  text-decoration: underline;
+  text-shadow: 4px 5px 5px black;
+}
+
+.sidebar {
+  background-color: #121212;
+  border-radius: 8px;
+  float: right;
+  width: 15%;
+}
+
+.side-title {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 16pt;
+  color: rgb(175, 136, 36);
+  text-align: center;
+  background-color: #0c0c0c;
+  font-family: 'Pixelify Sans', cursive;
+}
+
+.sidebar-can {
+  min-height: 100vh;
+  margin-bottom: 0px;
+}
+
+.category {
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 0px 7px 10px 15px;
+  border-bottom: 0.5px #302d30 solid;
+}
+
+li.cat-items {
+  font-size: 11pt;
+  margin: 0px;
+  display: flex;
+  width: 94%;
+  padding: 15px 15px 5px 30px; 
+  border-radius: 10px;
+  border-bottom: 0.5px #302d30 solid;
+}
+
+li.cat-items a:hover {
+  color: #6d6b6b;
+  font-size: 14pt;
+}
+
+.cat-link {
+  padding-right: 25px;
+  font-size: 9pt;
+  color: aliceblue;
+}
+
+.list {
+  list-style-type: circle;
+  padding-left: 15px;
+}
+
+.cite {
+  font-size: 8pt;
+  text-align: right;
+}
+
+.track-can {
+  background-color: #121212;
+  border-top: 1px black solid;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+#image-track {
+  display: flex;
+  gap: 2vmin;
+  left: 7%;
+  top: 45%;
+  position: relative;
+  user-select: none;
+}
+
+.image {
+  width: 40vmin;
+  height: 56vmin;
+  cursor: ew-resize;
+  object-fit: cover;
+  border-radius: 5%;
+  object-position: 100% center;
+  box-shadow: 9px 5px 3px 3px #0000008c;
+}
+
+.tn-image {
+  box-shadow: 3px 3px 2px 2px #0a0a0a;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+.image:hover {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+*/
+
+footer {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background: #0c0c0c;
+  border-top: 1px black solid;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -5px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.haiku {
+  font-family: 'Acme', sans-serif;
+  padding-bottom: 10px;
+  font-size: 9pt;
+}
+
+.poem {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-flex {
+  font-family: 'Acme', sans-serif;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-size: 9pt;
+  margin: auto;
+  display: flex;
+  width: 80%;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-mid {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right {
+  display: flex;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 15pt;
+  color: whitesmoke;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footy-logo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 15pt;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.okpara_copyright {
+  font-family: 'Fuggles', cursive;
+  font-size: 14pt;
+}
+
+.haiku {
+  font-size: 10pt;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(85, 81, 81);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #363636;
+}

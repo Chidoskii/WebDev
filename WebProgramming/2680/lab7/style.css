@@ -1,0 +1,81 @@
+html, body {
+margin: 0;
+width: 100%;
+background-color: whitesmoke;
+font-family: 'Tilt Neon', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main-can {
+  width: 40%;
+  /* min-height: 65vh; */
+  margin: 25px auto;
+  border-radius: 10px;
+  /* padding-bottom: 50px; */
+  /* background-color: rgb(236, 236, 236); */
+  background-color: whitesmoke;
+}
+
+#userInput, #multiples {
+  border-radius: 5px;
+  margin: auto;
+  height: 25px;
+  width: 50%;
+}
+
+#userInput {
+  padding-left: 5px;
+  background-color: bisque;
+}
+
+.a, .b {
+  border: 2px dotted black;
+  margin: 10px auto;
+  height: 25px;
+  border-radius: 7px;
+
+}
+
+.a {
+  background-color: rgb(144 238 144);
+}
+
+.b {
+  background-color: lightblue;
+}
+
+#multiples.prompt, #multiples.error {
+  background-color: lightcyan;
+  text-align: center;
+  border: 1px solid black;
+  height: auto;
+}
+
+#multiples.error {
+  background-color: rgb(255, 185, 185);
+}
+
+.warning {
+  margin: 5px auto;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  background-color: gainsboro;
+}
+
+h2.info {
+  margin: 15px auto;
+}
+
+h1, h2 { 
+  text-shadow: 1px 1px 2px royalblue;
+}

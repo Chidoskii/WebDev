@@ -1,0 +1,57 @@
+html, body {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("./desk.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+#container {
+  background-image: url("./gbcolor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 80vh;
+  margin: 60px auto 0 auto;
+  width: 60%;
+}
+
+.title {
+  padding-top: 4px;
+}
+
+#list {
+  text-align: center;
+  height: 210px;
+  margin: auto;
+  width: 275px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.listitem {
+  width: 75%;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}

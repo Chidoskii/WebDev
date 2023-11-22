@@ -1,0 +1,53 @@
+body {
+  background-color: #ddc6a1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.move-choice {
+  height: 100px;
+  width: 100px;
+}
+
+.winner-img {
+  height: 450px;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 3px solid;
+  width: 150px;
+  height: 150px;  
+  border-radius: 75px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.right-choice {
+  background-color: rgb(30, 192, 30);
+}
+
+.wrong-choice {
+  background-color: red;
+}
+
+.result {
+  font-size: 25px;  
+  font-weight: bold;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.reset-score-button {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
